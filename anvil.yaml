@@ -2,8 +2,13 @@ allow_embedding: false
 package_name: Anvil_Kubernetes_Operator
 name: Anvil Kubernetes Operator
 startup_form: Form1
-runtime_options: {version: 2, client_version: '3', server_version: python3-full, server_spec: null,
-  preview_v3: true}
+uplink_visible: true
+runtime_options:
+  version: 2
+  client_version: '3'
+  server_version: python3-full
+  server_spec: {base: python310-minimal}
+  preview_v3: true
 services:
 - source: /runtime/services/tables.yml
   client_config: {}
