@@ -12,3 +12,8 @@ class Form1(Form1Template):
     # for p in pods['items']:
     #   print(f"{p['metadata']['namespace']}: {p['metadata']['name']}")
 
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    anvil.server.call("deploy_anvil")
+
+
