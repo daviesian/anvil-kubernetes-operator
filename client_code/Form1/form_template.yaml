@@ -21,6 +21,11 @@ components:
       data_bindings:
       - {property: items, code: self.pods, writeback: false}
     layout_properties: {grid_position: 'GUXRHT,AHMLWM'}
+  - name: button_1
+    properties: {text: Deploy}
+    type: Button
+    layout_properties: {grid_position: 'OCEQOV,NEOWXJ'}
+    event_bindings: {click: button_1_click}
 - type: FlowPanel
   properties: {}
   name: navbar_links
