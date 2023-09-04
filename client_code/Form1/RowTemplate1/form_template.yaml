@@ -1,3 +1,20 @@
 is_package: true
 container: {type: DataRowPanel}
-components: []
+components:
+- name: delete_cluster
+  properties: {icon: 'fa:trash', icon_align: top}
+  type: Link
+  layout_properties: {column: HOPCCP}
+  event_bindings: {click: delete_cluster_click}
+- name: label_1
+  properties: {}
+  type: Label
+  layout_properties: {column: VJQQOR}
+  data_bindings:
+  - {property: text, code: 'self.item[''metadata''][''name'']', writeback: false}
+- name: label_2
+  properties: {}
+  type: Label
+  layout_properties: {column: JKSDUP}
+  data_bindings:
+  - {property: text, code: 'self.item[''metadata''][''namespace'']', writeback: false}

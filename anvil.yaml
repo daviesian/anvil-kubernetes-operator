@@ -1,6 +1,6 @@
 allow_embedding: false
-package_name: Anvil_Kubernetes_Operator
-name: Anvil Kubernetes Operator
+package_name: Anvil_Kubernetes_Dashboard
+name: Anvil Kubernetes Dashboard
 startup_form: Form1
 uplink_visible: true
 runtime_options:
